@@ -11,11 +11,11 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
            
-            var  str = "dddfffffdddd3434";
+            var str = "dddfffffdddd3434";
 
             var strs = "中国人";
 
-            var q = "cccccccccdddddddddddddddddddkkdc";
+            var q = "123";
 
 
             var lst = new List<string>();
