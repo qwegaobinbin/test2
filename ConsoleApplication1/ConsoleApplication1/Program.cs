@@ -10,7 +10,8 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-           
+
+            var str23 = "dddfffffdddd3434";
             var str = "dddfffffdddd3434";
 
             var strs = "中国人";
@@ -22,7 +23,7 @@ namespace ConsoleApplication1
 
             var q1 = "4oooddfd4";
 
-         
+            str23 = "1rrrrtt";
             var lst1 = new List<string>();
 
 
@@ -30,18 +31,22 @@ namespace ConsoleApplication1
 
             var q111 = "4oooddfd4";
 
-
+            str23 = "1e";
             var lst111 = new List<string>();
-
-
-
 
             var lst21 = new List<string>();
 
             var q11 = "4oooddfd4";
 
 
+            str23 = "1tt";
             var lst11 = new List<string>();
+            str23 = "1rrrtt";
+
+            str23 = "1";
+
+
+            str23 = "3";
         }
     }
 }
