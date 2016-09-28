@@ -13,6 +13,8 @@ namespace ConsoleApplication1
             string str = "dddfffffdddd";
 
             string strs = "中国人";
+
+            var q = "ddddd";
         }
     }
 }
