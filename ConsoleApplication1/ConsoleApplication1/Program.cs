@@ -15,11 +15,15 @@ namespace ConsoleApplication1
 
             var strs = "中国人";
 
-            var q = "4oooddfd4";
+            var q4 = "4oooddfd4";
 
 
-            var lst = new List<string>();
-         
+            var lst2 = new List<string>();
+
+            var q1 = "4oooddfd4";
+
+
+            var lst1 = new List<string>();
         }
     }
 }
