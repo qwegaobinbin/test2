@@ -11,6 +11,8 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             string str = "dddfffffdddd";
+
+            string strs = "中国人";
         }
     }
 }
