@@ -18,12 +18,12 @@ namespace ConsoleApplication1
             var q4 = "4oooddfd4";
 
 
-            var lst2 = new List<string>();
+            var lst21 = new List<string>();
 
-            var q1 = "4oooddfd4";
+            var q11 = "4oooddfd4";
 
-         
-            var lst1 = new List<string>();
+
+            var lst11 = new List<string>();
         }
     }
 }
