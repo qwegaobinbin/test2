@@ -10,12 +10,12 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-           
+
             var str = "dddfffffdddd3434";
 
             var strs = "中国人";
 
-            var q = "4oooddfd4";
+            var q = "4oooddfd4ddd";
 
 
             var lst = new List<string>();
