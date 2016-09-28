@@ -15,6 +15,10 @@ namespace ConsoleApplication1
             string strs = "中国人";
 
             var q = "ddfffdddf";
+
+
+            List<string> lst = new List<string>();
+         
         }
     }
 }
