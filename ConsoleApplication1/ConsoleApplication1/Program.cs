@@ -11,6 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
            
+            var str23 = "dddfffffdddd3434";
             var str = "dddfffffdddd3434";
 
             var strs = "中国人";
@@ -23,7 +24,7 @@ namespace ConsoleApplication1
             var q1 = "4oooddfd4";
 
          
-       
+
 
 
             var lst11 = new List<string>();
