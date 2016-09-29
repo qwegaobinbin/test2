@@ -1,0 +1,15 @@
+diff a/ConsoleApplication1/ConsoleApplication1/Program.cs b/ConsoleApplication1/ConsoleApplication1/Program.cs	(rejected hunks)
+@@ -17,8 +17,13 @@
+ 
+             var q = "4oooddfd4";
+ 
+             var lst = new List<string>();
++
++            var dd = "dddddddddd";
++
++
+          
++
+         }
+     }
+ }
