@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    public class ClassA : AInterface
+    public class ClassD
     {
-     
-        public virtual void fang1()
+        public string str = "ddd";
+        public virtual string Hello(string str,out string st)
         {
-            string a = "你好A";
+            st = "ddd";
+            return str;
         }
     }
 }
