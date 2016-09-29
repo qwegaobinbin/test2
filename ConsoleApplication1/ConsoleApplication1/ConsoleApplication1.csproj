@@ -45,7 +45,6 @@
     <Compile Include="BInterface.cs" />
     <Compile Include="ClassA.cs" />
     <Compile Include="CLassB.cs" />
-    <Compile Include="ClassC.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
