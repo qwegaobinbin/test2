@@ -18,6 +18,8 @@ namespace ConsoleApplication1
             str = "123";
             str = "123";
 
+            object obj = default(DateTime);
+
         }
     }
 }

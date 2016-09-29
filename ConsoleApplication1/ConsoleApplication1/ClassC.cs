@@ -16,7 +16,7 @@ namespace ConsoleApplication1
 
         public void fang1()
         {
-            throw new NotImplementedException();
+          
         }
     }
 }
