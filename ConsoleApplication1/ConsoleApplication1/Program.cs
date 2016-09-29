@@ -6,20 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
+    //多态继承
     class Program
     {
         static void Main(string[] args)
         {
-           
-            var str = "dddfffffdddd3434";
+            AInterface aInterface = new ClassC();
+            aInterface.fang1();
 
-            var strs = "中国人";
+            
 
-            var q = "5555555";
+          
 
-
-            var lst = new List<string>();
-         
         }
     }
 }
