@@ -6,18 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    //多态继承
-    class Program
+    public class ClassA : AInterface
     {
-        static void Main(string[] args)
+       
+        public void fang1()
         {
-            AInterface aInterface = new ClassC();
-            aInterface.fang1();
-
-            
-
-          
-
+            string a = "你好A";
         }
     }
 }
