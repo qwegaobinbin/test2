@@ -14,7 +14,7 @@ namespace ConsoleApplication1
 
             string strs = "中国人";
 
-            var q = "123456ffffffffffffffffffffff";
+            var q = "123456ffffffffffffffffffffffkkk";
 
 
             List<string> lst = new List<string>();
