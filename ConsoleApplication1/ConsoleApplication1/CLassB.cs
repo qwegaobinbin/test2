@@ -11,7 +11,7 @@ namespace ConsoleApplication1
 
         public void Fang2()
         {
-            string str = "B";
+            string str = "Bhhh";
         }
     }
 }
