@@ -15,11 +15,11 @@ namespace ConsoleApplication1
             aInterface.fang1();
             string str1= "text3fff";
             string str = "text3";
-            str = "123";
-            str = "123";
-            str = "123";
-            str = "123";
-            str = "123";
+            str = "123hh";
+            str = "123hhh";
+            str = "123ggg";
+            str = "123hhh";
+            str = "123hh";
             str = "123";
 
         }
