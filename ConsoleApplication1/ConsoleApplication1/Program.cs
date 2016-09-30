@@ -14,7 +14,7 @@ namespace ConsoleApplication1
             AInterface aInterface = new ClassC();
             aInterface.fang1();
 
-            string str = "text2";
+            string str = "text2555";
             str = "123";
             str = "123";
 
