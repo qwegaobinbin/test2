@@ -17,7 +17,7 @@ namespace ConsoleApplication1
             string str = "text3";
             str = "123";
             str = "123";
-            str = "123";
+            str = "123555";
             str = "123";
             str = "123";
             str = "123";
