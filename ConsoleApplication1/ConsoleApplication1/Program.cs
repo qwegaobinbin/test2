@@ -22,13 +22,12 @@ namespace ConsoleApplication1
             str = "123hhhhhh";
             str = "123hh";
 
-            str = "123";
-            str = "123";
-            str = "12355gggg5";
-            str = "123";
-            str = "123";
+            str = "123hh";
+            str = "123hhh";
+            str = "123ggg";
+            str = "123hhhhhh";
+            str = "123hh";
 
-            str = "123";
 
         }
     }
