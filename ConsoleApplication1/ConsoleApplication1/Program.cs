@@ -13,8 +13,8 @@ namespace ConsoleApplication1
         {
             AInterface aInterface = new ClassC();
             aInterface.fang1();
-            string str1= "text3fff";
-            string str = "text3";
+            string str1= "text3333333333";
+            string str = "text33333";
 
             str = "123hh";
             str = "123hhh";
