@@ -17,10 +17,17 @@ namespace ConsoleApplication1
             string str = "text33333";
 
             str = "123hh";
-            str = "123hhh";
+            str = "123hhhh";
             str = "123ggg";
+
             str = "123hghhh";
             str = "123hghhh";
+
+            str = "123hhhhhh";
+            str = "123hh";
+           str = "123ggg";
+            str = "123hhhhhh";
+            str = "123hhhhhh";
 
             str = "123hghhh";
             str = "123hghhh";
@@ -28,7 +35,12 @@ namespace ConsoleApplication1
             str = "123";
             str = "123";
 
-            str = "123";
+
+
+
+
+
+>>>>>>> .theirs
 
         }
     }
