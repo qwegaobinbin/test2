@@ -21,10 +21,8 @@ namespace ConsoleApplication1
             str = "123ggg";
             str = "123hhhhhh";
             str = "123hh";
-
-            str = "123hh";
-            str = "123hhh";
             str = "123ggg";
+            str = "123hhhhhh";
             str = "123hhhhhh";
             str = "123hh";
 
