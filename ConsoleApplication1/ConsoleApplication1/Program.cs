@@ -44,7 +44,7 @@ namespace ConsoleApplication1
 
 
             AopClass aopClass = new AopClass();
-            aopClass.Say("ddpppp");
+            aopClass.Say("ddpffffffffffffppp");
             aopClass.Hello();
 
         }
