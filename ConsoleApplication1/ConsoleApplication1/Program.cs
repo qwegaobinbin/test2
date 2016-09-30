@@ -1,6 +1,9 @@
-﻿using System;
+﻿using ICSharpCode.SharpZipLib.Zip;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,40 +16,59 @@ namespace ConsoleApplication1
   
         static void Main(string[] args)
         {
-            //AInterface aInterface = new ClassC();
-            //aInterface.fang1();
-
-            //string str = "12kkkk3";
-            //str = "123";
-            //str = "123";
-           
-            //object obj = default(DateTime);
-
-            //var dic = new Dictionary<string, string>();
-            //dic.Add("1","A");
-            //dic.Add("2","B");
-            //dic.Add("3","C");
-
-            ////foreach(var item in dic)
-            ////{
-            ////    string key =  item.Key;
-            ////    string value = item.Value;
-            ////}
 
 
-            //ClassF classF = new ClassF();
-            //classF.Hello("dd");
-
-            //string str;
-            //AopClass aopClass = new AopClass();
-
-            //aopClass.Hello("ddgggg", out str);
-
-
-            AopClass aopClass = new AopClass();
-            aopClass.Say("ddpffffffffffffppp");
+            AopClass aopClass = new AopClass("d");
+            AopClass.Say("ddpffffffffffffppp");
             aopClass.Hello();
 
+
+            //using (ZipOutputStream s = new ZipOutputStream(File.Create(@"F:\360Downloads\Software\3.zip")))
+            //{
+            //    s.SetLevel(6);  //设置压缩等级，等级越高压缩效果越明显，但占用CPU也会更多
+            //    using (FileStream fs = File.OpenRead(@"F:\360Downloads\Software\3.txt"))
+            //    {
+            //        byte[] buffer = new byte[4 * 1024];  //缓冲区，每次操作大小
+            //        ZipEntry entry = new ZipEntry(Path.GetFileName(@"改名.txt"));     //创建压缩包内的文件
+            //        entry.DateTime = DateTime.Now;  //文件创建时间
+            //        s.PutNextEntry(entry);          //将文件写入压缩包
+
+            //        int sourceBytes;
+            //        do
+            //        {
+            //            sourceBytes = s.Read(buffer, 0, buffer.Length);    //读取文件内容(1次读4M，写4M)
+            //            s.Write(buffer, 0, sourceBytes);                    //将文件内容写入压缩相应的文件
+            //        } while (sourceBytes > 0);
+            //    }
+            //    s.CloseEntry();
+            //}
+
+            Console.ReadKey();
+          
+
+
+
+
+
+
+
+        }
+
+        /// <summary>
+        /// 压缩字节数组
+        /// </summary>
+        /// <param name="str"></param>
+        public static byte[] Compress(byte[] inputBytes)
+        {
+            using (MemoryStream outStream = new MemoryStream())
+            {
+                using (GZipStream zipStream = new GZipStream(outStream, CompressionMode.Compress, true))
+                {
+                    zipStream.Write(inputBytes, 0, inputBytes.Length);
+                    zipStream.Close(); //很重要，必须关闭，否则无法正确解压
+                    return outStream.ToArray();
+                }
+            }
         }
     }
 
@@ -59,14 +81,16 @@ namespace ConsoleApplication1
             get;
             set;
         }
-
+       
         public bool IsLock = true;
+
+    
         public AopClass(string name)
         {
             Name = name;
             Console.WriteLine("Aop Class Create Name:" + Name);
         }
-
+  
         public AopClass()
         {
             Console.WriteLine("Aop Class Create");
@@ -80,12 +104,13 @@ namespace ConsoleApplication1
         }
 
         [MethodAopAdvice(AdviceType.Before)]
-        public string Say(string content)
+        public static string Say(string content)
         {
-            string c = "IsLock:" + IsLock + "\t " + Name + " :" + content;
+            string c = "IsLock:" ;
             Console.WriteLine(c);
             return c;
         }
+       
         public override string ToString()
         {
             return string.Format("Name:{0},IsLock:{1}", this.Name, this.IsLock);
