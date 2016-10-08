@@ -18,11 +18,13 @@ namespace ConsoleApplication1
   
         static void Main(string[] args)
         {
-//          
+          
 
-            AopClass1 aopClass = new AopClass1("d");
-            AopClass1.Say("ddpffffffffffffppp");
-            aopClass.Hello();
+
+
+            //AopClass1 aopClass = new AopClass1("d");
+            //AopClass1.Say("ddpffffffffffffppp");
+            //aopClass.Hello();
 
 
             //using (ZipOutputStream s = new ZipOutputStream(File.Create(@"F:\360Downloads\Software\3.zip")))
@@ -45,7 +47,8 @@ namespace ConsoleApplication1
             //    s.CloseEntry();
             //}
 
-            
+            Person person = new Person();
+            person.Hello("ff");
             Console.ReadKey();
           
 
@@ -56,6 +59,17 @@ namespace ConsoleApplication1
 
 
         }
+        [AopAttribute1]
+        public class Person : ContextBoundObject
+        {
+           
+            public void Hello(string ni)
+            {
+                Console.Write("你电话");
+            }
+        
+        }
+
 
         /// <summary>
         /// 压缩字节数组
@@ -102,7 +116,7 @@ namespace ConsoleApplication1
         [MethodAopAdvice(AdviceType.Around)]
         public string Hello()
         {
-            throw new ArgumentException("dd");
+            //throw new ArgumentException("dd");
             Console.WriteLine("hello world:");
             return "hello world:";
         }

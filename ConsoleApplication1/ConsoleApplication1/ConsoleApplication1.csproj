@@ -46,13 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AopHelper.cs" />
+    <Compile Include="AopHelper\AopPerson.cs" />
+    <Compile Include="AopHelper\AopProxy1Provider.cs" />
+    <Compile Include="AopHelper\fileIGetRealizeFactory\GetRealizeFactoryPrivoder.cs" />
+    <Compile Include="AopHelper\fileIGetRealizeFactory\IGetRealizeFactory.cs" />
     <Compile Include="Interface\AInterface.cs" />
     <Compile Include="Interface\BInterface.cs" />
     <Compile Include="Interface\ClassA.cs" />
     <Compile Include="Interface\CLassB.cs" />
     <Compile Include="Interface\ClassC.cs" />
     <Compile Include="Interface\ClassD.cs" />
-    <Compile Include="Interface\AopAttribute.cs" />
+    <Compile Include="AopHelper\AopAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

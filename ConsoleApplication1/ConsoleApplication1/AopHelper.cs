@@ -16,7 +16,7 @@ namespace ConsoleApplication1
          private AopProxy.IAopProxyBuilder builder=null;
          public AopAttribute(Type builderType)
          {
-            this.builder = (ConsoleApplication1.AopProxy.IAopProxyBuilder)Activator.CreateInstance(builderType);
+            this.builder = (AopProxy.IAopProxyBuilder)Activator.CreateInstance(builderType);
          }
   
          public override MarshalByRefObject CreateInstance(Type serverType)
@@ -153,6 +153,7 @@ namespace ConsoleApplication1
                  object o = callMsg.MethodBase.Invoke(GetUnwrappedServer(), args);  //调用 原型类的 方法       
                  //ChangeReturnValue(msg, ref o);
                  message = new ReturnMessage(o, args, args.Length, callMsg.LogicalCallContext, callMsg);   // 返回类型 Message
+              
              }
              catch (Exception e)
              {
@@ -160,7 +161,7 @@ namespace ConsoleApplication1
              }
 
              //Console.WriteLine("Call Method:"+callMsg.MethodName);
-             //Console.WriteLine("Return:"+ message.Properties["__Return"].ToString());
+             Console.WriteLine("Return:"+ message.Properties["__Return"].ToString());
              return message;
          }
          public virtual IMessage ProcessConstruct(IMessage msg)
