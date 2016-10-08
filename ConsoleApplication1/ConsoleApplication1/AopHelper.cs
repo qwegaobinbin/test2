@@ -26,8 +26,6 @@ namespace ConsoleApplication1
 
      }
 
-
-
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
       public class MethodAopAdviceAttribute : Attribute
       {
