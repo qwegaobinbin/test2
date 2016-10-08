@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,10 +18,10 @@ namespace ConsoleApplication1
   
         static void Main(string[] args)
         {
+//          
 
-
-            AopClass aopClass = new AopClass("d");
-            AopClass.Say("ddpffffffffffffppp");
+            AopClass1 aopClass = new AopClass1("d");
+            AopClass1.Say("ddpffffffffffffppp");
             aopClass.Hello();
 
 
@@ -43,6 +45,7 @@ namespace ConsoleApplication1
             //    s.CloseEntry();
             //}
 
+            
             Console.ReadKey();
           
 
@@ -73,7 +76,7 @@ namespace ConsoleApplication1
     }
 
     [AopAttribute(typeof(ConsoleApplication1.AopProxy.AopProxyBuilder))]
-    public class AopClass : ContextBoundObject
+    public class AopClass1 : ContextBoundObject
     {
 
         public string Name
@@ -85,13 +88,13 @@ namespace ConsoleApplication1
         public bool IsLock = true;
 
     
-        public AopClass(string name)
+        public AopClass1(string name)
         {
             Name = name;
             Console.WriteLine("Aop Class Create Name:" + Name);
         }
   
-        public AopClass()
+        public AopClass1()
         {
             Console.WriteLine("Aop Class Create");
         }
@@ -99,6 +102,7 @@ namespace ConsoleApplication1
         [MethodAopAdvice(AdviceType.Around)]
         public string Hello()
         {
+            throw new ArgumentException("dd");
             Console.WriteLine("hello world:");
             return "hello world:";
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Activation;
@@ -68,7 +69,7 @@ namespace ConsoleApplication1
          }
          public virtual void PreProcess(object obj, string method = "", int argCount = 0, object[] args = null)
          {
-             var o = obj as AopClass;
+             var o = obj as AopClass1;
              if (o != null)
              {
                  o.IsLock = false;
@@ -93,7 +94,7 @@ namespace ConsoleApplication1
 
          public virtual void PostProcess(object obj, object returnValue = null, string method = "", int argCount = 0, object[] args = null)
          {
-             var o = obj as AopClass;
+             var o = obj as AopClass1;
              if (o != null)
              {
                  o.IsLock = true;
@@ -150,7 +151,7 @@ namespace ConsoleApplication1
              {
                  object[] args = callMsg.Args;   //方法参数                 
                  object o = callMsg.MethodBase.Invoke(GetUnwrappedServer(), args);  //调用 原型类的 方法       
-                 ChangeReturnValue(msg, ref o);
+                 //ChangeReturnValue(msg, ref o);
                  message = new ReturnMessage(o, args, args.Length, callMsg.LogicalCallContext, callMsg);   // 返回类型 Message
              }
              catch (Exception e)
