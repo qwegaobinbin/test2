@@ -17,7 +17,7 @@ namespace ConsoleApplication1.AopHelper
         {
             ddd = "rr";
             Console.Write("ddddddddddddddddddBeforeHello");
-            Thread.Sleep(200);
+ 
         }
 
         //输出设置
