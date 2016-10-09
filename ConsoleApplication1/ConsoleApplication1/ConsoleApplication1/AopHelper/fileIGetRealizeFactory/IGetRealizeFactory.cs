@@ -8,6 +8,6 @@ namespace ConsoleApplication1.AopHelper.fileIGetRealizeFactory
 {
     public interface IGetRealizeFactory
     {
-        AopProxy1 GetRealizeFactory(Type type);
+        AopProxy1 GetRealizeFactory(Type type, out Type typeobj, out object outObj);
     }
 }

@@ -69,12 +69,7 @@ namespace ConsoleApplication1
          }
          public virtual void PreProcess(object obj, string method = "", int argCount = 0, object[] args = null)
          {
-             var o = obj as AopClass1;
-             if (o != null)
-             {
-                 o.IsLock = false;
-                 o.Name = "999999";
-             }
+           
          }
 
          public virtual void PreProcess(IMessage requestMsg)
@@ -94,12 +89,7 @@ namespace ConsoleApplication1
 
          public virtual void PostProcess(object obj, object returnValue = null, string method = "", int argCount = 0, object[] args = null)
          {
-             var o = obj as AopClass1;
-             if (o != null)
-             {
-                 o.IsLock = true;
-                 o.Name = "10101010";
-             }
+           
 
 
          }

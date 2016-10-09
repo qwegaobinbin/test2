@@ -10,9 +10,17 @@ namespace ConsoleApplication1.AopHelper
     {
         public AopPerson(Type serverType)
             : base(serverType) { }
-        protected override void BeforeProcessLogic(object[] args)
+
+
+        public void BeforeHello(string ni, out string ddd)
         {
-            string str = args[0].ToString();
+            ddd = string.Empty;
+        }
+
+        //输出设置
+        public void AfterHello(object[] args, object returnValue, object[] OutRef)
+        {
+            
         }
     }
 }
